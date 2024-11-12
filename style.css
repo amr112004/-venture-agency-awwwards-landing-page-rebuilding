@@ -1,0 +1,226 @@
+@font-face {
+    font-family: 'RejouiceHeadline';
+    src: url('./assets/fonts/Rejouice-Headline.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'RejouiceHeadline', sans-serif;
+}
+*::selection {
+    background-color: rgb(255, 213, 0);
+    color: rgb(255, 255, 255);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'RejouiceHeadline', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#cursor {
+    height: 7vw;
+    width: 7vw;
+    background-color: #FF5F38;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    transform: translate(-50%,-50%);
+}
+#cursor h5 {
+    font-size: 1.2vw;
+    align-items: center;
+    display: flex;
+    font-weight: 500;
+}
+
+#page1 {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+#page1 video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+.page1-content {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.137);
+    position: relative;
+    z-index: 2;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw;
+    z-index: 422;
+    
+}
+
+nav h3,h4 {
+    font-size: 1.1vw;
+    font-weight: 100;
+    z-index: 555;
+}
+.page1-content h1 {
+    display: flex;
+    align-items: center;
+    z-index: 999;
+    align-content: center;
+    font-size: 16vw;
+    font-weight: 100;
+    line-height: 14.9vw;
+
+}
+
+#page2 {
+    height: 100vh;
+    width: 100%;
+    background-color: #FAF8F3;
+}
+
+.first {
+    display: flex;
+    justify-content: space-between;
+    padding: 2.1vw 3vw;
+    color: rgb(0, 0, 0);
+    font-size: .7vw;
+    font-weight: 10px;
+    padding-top: 2vw;
+}
+
+.custom-line {
+    width: 95%;           /* Controls the length of the line */
+    height: 2px;          /* Controls the thickness of the line */
+    background-color: #1b1a19; /* Controls the color of the line */
+    margin-left: auto;     /* Centers the line */
+    margin-right: auto;    /* Centers the line */
+    padding-left: 11px;    /* Adds padding to the left side
+    /* padding-right: 11px;    */
+}
+
+.sec h1 {
+    width: 95%;
+    padding: 2.9vw;
+    color: rgb(0, 0, 0);
+    font-size: 4.8vw;
+    font-weight: 150;
+}
+
+#page3 {
+   min-height: 100vh;
+   width: 100%;
+   position: relative;
+}
+#page3-top {
+    justify-content: center;
+    text-align: center;
+    font-size: 90px;
+    font-weight: 200px;
+}
+
+#page3-top h4 {
+    margin-bottom: 1vw;
+    font-size: 1vw;
+    font-weight: 500;
+    padding-top: 1vw;
+}
+#page3-top h4 span {
+    font-size: 0.7vw;
+    background-color: black;
+    color: white;
+    padding: 4px 7px;
+    border-radius: 10px;
+}
+
+#page3-top h2 {
+    font-size: 90px;
+    padding-left: 0vw;
+    font-weight: 110;
+    padding-left: 0vw;
+    line-height: 1.8;
+
+}
+
+#page4 {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    padding:3vw;
+}
+.page3-top span{
+    display: flex;
+    flex-direction: column;
+}
+
+.page3elements {
+    height: 75vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1vw;
+}
+.page3elements .box {
+    height: 100%;
+    width: 32.5%;
+    display: flex;
+    padding: 15px;
+}
+.page3elements video {
+    /* padding: 1vw 1vw; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    justify-content: space-between;
+}
+#page5 {
+    min-height: .8vh;
+    width: 100%;
+    position: relative;
+    padding:3vw 3vw;
+    background-color: #FF5F38;
+}
+#page5 h1 {
+    font-size: 4vw;
+    padding: 1vw 2vw;
+    color: white;
+}
+#loader {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #000000;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+#loader h3 {
+    font-size: 2.5vw;
+
+} 
